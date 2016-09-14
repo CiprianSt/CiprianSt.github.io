@@ -1,0 +1,40 @@
+/**
+ * Created by Cipri on 9/14/2016.
+ */
+(function () {
+    'use strict';
+
+    angular
+        .module('myApp')
+        .directive('scrollTo', directiveName);
+
+    /* @ngInject */
+    function directiveName() {
+        var directive = {
+            link: link,
+            restrict: 'A'
+        };
+        return directive;
+
+        function link(scope, element, attrs) {
+            var targetId = attrs.href;
+
+            element.on('click', function() {
+                var target;
+
+                if (targetId) {
+                    target = $(targetId);
+                } else {
+                    target = element;
+                }
+
+                $('html, body').stop().animate({
+                    scrollTop: (target.offset().top - 50)
+                }, 1250, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        }
+    }
+
+})();
+

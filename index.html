@@ -1,6 +1,60 @@
-<html>
-  <head></head>
-  <body>
-    <p>Hello World!</p>
-  </body>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>MyApp!</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Theme CSS -->
+  <link href="assets/css/agency.css" rel="stylesheet">
+
+  <!-- Other CSS Libraries -->
+
+  <!-- Personal CSS library -->
+  <!--<link href="assets/css/my.css" rel="stylesheet">-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="assets/lib/html5shiv.min.js"></script>
+  <script src="assets/lib/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+
+<my-navigation></my-navigation>
+
+<div ng-view></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/lib/jquery.min.js"></script>
+
+<!-- AngularJS Library Dependencies -->
+<script src="assets/lib/angular.js"></script>
+<script src="assets/lib/angular-route.min.js"></script>
+
+<!-- AngularJS Components -->
+<script src="app/app.module.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/home/homeController.js"></script>
+<script src="app/shared/navigation/navigationDirective.js"></script>
+<script src="app/shared/scroll/scrollDirective.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/lib/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+</body>
 </html>
