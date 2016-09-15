@@ -13,6 +13,12 @@
         vm.title = 'HomeController';
         vm.message = "Hello World!";
 
+        vm.items = [
+            {
+
+            },
+        ];
+
         activate();
 
         ////////////////

@@ -1,15 +1,16 @@
 <div class="col-md-4 col-sm-6 portfolio-item">
-    <a target="_self" href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+    <a target="_self" ng-href="{{'#portfolioModal' + $index}}" class="portfolio-link" data-toggle="modal">
         <div class="portfolio-hover">
             <div class="portfolio-hover-content">
                 <i class="fa fa-plus fa-3x"></i>
             </div>
         </div>
-        <img src="assets/img/portfolio/roundicons.png" class="img-responsive" alt="">
+        <img ng-src="{{'assets/img/portfolio/' + item.captionImage}}" class="img-responsive" alt="">
     </a>
+
     <div class="portfolio-caption">
-        <h4>Round Icons</h4>
-        <p class="text-muted">Graphic Design</p>
+        <h4>{{item.title}}</h4>
+        <p class="text-muted">{{item.subTitle}}</p>
     </div>
 </div>
 
