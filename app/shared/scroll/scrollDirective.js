@@ -6,10 +6,10 @@
 
     angular
         .module('myApp')
-        .directive('scrollTo', directiveName);
+        .directive('scrollTo', scrollDirective);
 
     /* @ngInject */
-    function directiveName() {
+    function scrollDirective() {
         var directive = {
             link: link,
             restrict: 'A'

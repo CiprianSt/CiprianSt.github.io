@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    header .intro-text {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+ul.social-buttons {
+    padding-top: 15px;
+}
+
+ul.social-buttons li a.btn-social-icon {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.btn-social-icon>:first-child {
+    line-height: 37px;
+}
+
+#img-profile {
+    height: 270px;
+    width: auto;
+}
+
+.social-roll {
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.social-roll:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
