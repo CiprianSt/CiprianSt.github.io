@@ -13,7 +13,7 @@
             .when('/',  {
                 templateUrl: 'app/home/homeView.html',
                 controller: 'HomeController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
             });
 
         // use the HTML5 History API
