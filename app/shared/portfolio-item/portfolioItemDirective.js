@@ -3,7 +3,7 @@
 
     angular
         .module('myApp')
-        .directive('portfolio-item', portfolioItemDirective);
+        .directive('portfolioItem', portfolioItemDirective);
 
     /* @ngInject */
     function portfolioItemDirective() {
@@ -11,14 +11,20 @@
             restrict: 'E',
             templateUrl: 'app/shared/portfolio-item/portfolioItemView.html',
             scope: {
-                data: "=item-data"
+                itemData: "=",
+                itemIndex: "="
             },
             link: link
         };
         return directive;
 
         function link(scope, element, attrs) {
-            console.log(scope.data);
+            var id = '#portfolioModal' + scope.itemIndex;
+
+            // Hack to properly display modals
+            $('.modal-dialog').parent().on('show.bs.modal', function(e) {
+                $(id).appendTo("body");
+            })
         }
     }
 

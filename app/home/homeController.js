@@ -15,7 +15,25 @@
 
         vm.items = [
             {
-
+                title: 'Demo title',
+                subTitle: 'Demo subtitle',
+                captionImage: 'dreams-preview.png',
+                description: 'Lorem ipsum doloret asndfhadbsd a sdbahsda',
+                image: 'dreams.png'
+            },
+            {
+                title: 'Demo title',
+                subTitle: 'Demo subtitle',
+                captionImage: 'dreams-preview.png',
+                description: 'Lorem ipsum doloret asndfhadbsd a sdbahsda',
+                image: 'dreams.png'
+            },
+            {
+                title: 'Demo title',
+                subTitle: 'Demo subtitle',
+                captionImage: 'dreams-preview.png',
+                description: 'Lorem ipsum doloret asndfhadbsd a sdbahsda',
+                image: 'dreams.png'
             },
         ];
 

@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="row">
-            <portfolio-item ng-repeat="item in vm.items"></portfolio-item>
+            <portfolio-item ng-repeat="item in vm.items" item-data="item" item-index="$index"></portfolio-item>
         </div>
     </div>
 </section>
