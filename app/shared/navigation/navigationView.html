@@ -6,29 +6,29 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" scroll-to href="#page-top">Ciprian Stan</a>
+            <a class="navbar-brand page-scroll" scroll-to="page-top" href="#page-top">Ciprian Stan</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" scroll-spy>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden" spy="page-top">
-                    <a scroll-to href="#page-top"></a>
+                <li class="hidden">
+                    <a scroll-to="page-top" href="#page-top"></a>
                 </li>
-                <li spy="about">
-                    <a scroll-to href="#about">About</a>
+                <li du-scrollspy="about">
+                    <a scroll-to="about" href="#about">About</a>
                 </li>
-                <li spy="portfolio">
-                    <a scroll-to href="#portfolio">Portfolio</a>
+                <li du-scrollspy="portfolio">
+                    <a scroll-to="portfolio" href="#portfolio">Portfolio</a>
                 </li>
-                <li>
-                    <a scroll-to href="#skills">Skills</a>
+                <li du-scrollspy="skills">
+                    <a scroll-to="skills" href="#skills">Skills</a>
                 </li>
-                <li>
-                    <a scroll-to href="#timeline">Timeline</a>
+                <li du-scrollspy="timeline">
+                    <a scroll-to="timeline" href="#timeline">Timeline</a>
                 </li>
-                <li spy="contact">
-                    <a scroll-to href="#contact">Contact</a>
+                <li du-scrollspy="contact">
+                    <a scroll-to="contact" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>

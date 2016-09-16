@@ -5,10 +5,10 @@
         .module('myApp')
         .controller('HomeController', HomeController);
 
-    // HomeController.$inject = ['dependency'];
+    HomeController.$inject = ['$anchorScroll'];
 
     /* @ngInject */
-    function HomeController() {
+    function HomeController($anchorScroll) {
         var vm = this;
         vm.title = 'HomeController';
         vm.message = "Hello World!";

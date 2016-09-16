@@ -3,7 +3,8 @@
 
     angular
         .module('myApp', [
-            'ngRoute'
+            'ngRoute',
+            'duScroll'
         ]);
 
 })();
