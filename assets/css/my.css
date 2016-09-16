@@ -39,3 +39,7 @@ ul.social-buttons li a.btn-social-icon {
     -ms-transform:rotate(360deg);
     transform:rotate(360deg);
 }
+
+.definition-table tbody tr td, .definition-table tbody tr th, .definition-table thead tr th {
+    border: none;
+}
