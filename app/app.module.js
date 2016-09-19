@@ -5,6 +5,7 @@
         .module('myApp', [
             'ngRoute',
             'duScroll'
-        ]);
+        ])
+        .value('duScrollOffset', 50)
 
 })();

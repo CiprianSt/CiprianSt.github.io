@@ -43,3 +43,8 @@ ul.social-buttons li a.btn-social-icon {
 .definition-table tbody tr td, .definition-table tbody tr th, .definition-table thead tr th {
     border: none;
 }
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    color: white;
+}

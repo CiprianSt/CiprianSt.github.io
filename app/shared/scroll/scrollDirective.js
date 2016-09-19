@@ -6,7 +6,7 @@
 
     angular
         .module('myApp')
-        .directive('scrollTo', scrollDirective)
+        .directive('scrollTo', scrollDirective);
 
     // scrollSpyDirective.$inject = ['$timeout'];
 
@@ -22,6 +22,8 @@
             var targetId = attrs.href;
 
             element.on('click', function() {
+                element.removeClass('active');
+                console.log(element);
                 var target;
 
                 if (targetId) {
